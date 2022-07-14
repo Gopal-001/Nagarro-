@@ -59,6 +59,20 @@ function handleChange(che,cnt){
     // console.log(che.style );
 }
 
+document.querySelector('#read').addEventListener('keyup',e=>{
+    const read = document.getElementById('read');
+    if(e.keyCode==13){
+        if(read.value.trim()==""){
+            document.getElementById('detail').style.color="red";
+            document.getElementById('detail').innerHTML="sorry the task is empty!!!";
+            read.blur();
+        }else{
+            list.push({text:read.value,val:false});
+            read.value = '';
+            print(list);
+        }
+    }
+});
 function addNewItem(){
     const value = document.getElementById('read').value;
     if(value.trim() == ""){
