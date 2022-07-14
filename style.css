@@ -1,0 +1,71 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+div{
+    width: 40%;
+}
+
+li{
+    text-align: left;
+    list-style: none;
+}
+
+.listItem{
+    width:calc(80%);
+    text-align: center;
+    border: 0;
+    border-bottom: 1px solid blue;
+}
+
+
+
+
+input[type='checkbox']{
+    width: fit-content;
+    margin-top:auto;
+}
+
+#read{
+    width: 90%;
+    margin-top: 7%;
+    border:0;
+    border-bottom: 2px solid palevioletred;
+    text-align: center;
+}
+input:focus{
+    outline:none;
+}
+button.main{
+    border: 0;
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    font-size: 25px;
+    /* float:right; */
+    position:relative;
+    right:0px;
+}
+button.main:hover{
+    background-color: palevioletred;
+    border: 0;
+}
+
+button.common{
+    border-radius: 100%;
+    width: 15px;
+    border: 0;
+    background-color: greenyellow;
+}
+#detail{
+    color: green;
+    font-size: 10px;
+}
+
+button#edit {
+    border-radius: 100%;
+    background-color: red;
+    width: 15px;
+    border:0;
+}
