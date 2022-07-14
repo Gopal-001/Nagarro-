@@ -16,7 +16,7 @@ let print = (list) => {
             li.querySelector("input[type='checkbox']").checked=true;
             li.querySelector("input[type='text']").style.textDecoration='line-through';
         }
-        console.log(e);
+        // console.log(e);
         cnt++;
         ul.appendChild(li);
     });    
@@ -26,7 +26,7 @@ function makeEditable(edit){
     const input = document.querySelector('#i'+edit);
     input.style.color = "orange";
     input.readOnly=false;
-    console.log(list[edit]);
+    // console.log(list[edit]);
     input.focus();
     input.addEventListener('keyup',e=>{
         if(e.keyCode == 13){
@@ -56,7 +56,7 @@ function handleChange(che,cnt){
     }
     list[cnt].val = che.checked;
     // li.style.textDecoration  = "line-through";
-    console.log(che.style );
+    // console.log(che.style );
 }
 
 function addNewItem(){
@@ -69,13 +69,13 @@ function addNewItem(){
     list.push({text:value,val:false});
     document.getElementById('read').value='';
     print(list);
-    console.log(list);
+    // console.log(list);
 }
 
 function delEle(toBeDeleted){
     console.log(toBeDeleted);
     list.splice(toBeDeleted,1);
-    console.log(list);
+    // console.log(list);
     print(list);
 }
 
