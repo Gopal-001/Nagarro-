@@ -1,11 +1,7 @@
-var list = ["sameer"];
+var list = [];
 let print = (list) => {
     const ul = document.getElementById('list');
     ul.innerHTML="";
-    // list.forEach(e => {
-    //     const cur = document.createElement('li');
-    //     base.appendChild(cur);
-    // });
     var cnt = 0;
     list.forEach(e => {
         const li = document.createElement("li");
